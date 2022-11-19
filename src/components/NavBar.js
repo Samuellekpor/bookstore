@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { AiOutlineUser } from 'react-icons/ai';
 
 function NavBar() {
   return (
@@ -14,7 +15,9 @@ function NavBar() {
             <NavLink to="/categories">Categories</NavLink>
           </li>
         </ul>
-        <button type="button" className="profilButton">Profile Button</button>
+        <button type="button" className="profilButton">
+          <AiOutlineUser />
+        </button>
       </nav>
     </div>
   );
