@@ -1,6 +1,34 @@
-# Getting Started with Create React App
+# Bookstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Booktore is an application whivh helphs with books storage. You can display a list of books, add a book or remove a selected book.
+
+## Built With
+
+- React.js
+- Git & GitHub
+
+
+## Get Started
+
+To get the content of this project locally you need to run the following commands in your terminal.
+
+### Prerequisites
+- IDE(code editor) like: **Vscode**, **Sublime**, etc. 
+- [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+
+### Setup
+1. Download the **Zip** file or clone the repo with:
+```bash
+git clone https://github.com/Samuellekpor/bookstore.git
+```
+2. To access cloned directory run:
+```bash
+cd bookstore
+```
+3. Open it with the live server by running:
+```bash 
+npm run start
+```
 
 ## Available Scripts
 
@@ -68,3 +96,55 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Install
+> To install linters and other project's dependencies run:
+```bash
+npm install
+```
+## Run Test for Linters
+
+For tracking linter errors locally you need to follow these steps:
+
+1. For tracking linter errors in HTML files run:
+```bash 
+npx hint .
+```
+
+2. For tracking linter errors in CSS or SASS files run:
+
+```bash
+npx stylelint "\*_/_.{css,scss}"
+```
+
+3. For tracking linter errors in JavaScript files run:
+
+```bash
+npx eslint .
+```
+
+
+## Authors
+
+👤 **Sammuel LEKPOR**
+
+- GitHub: [@githubhandle](https://github.com/Samuellekpor)
+- Twitter: [@twitterhandle](https://twitter.com/samuel_lekpor)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/sammuel-lekpor)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
