@@ -1,37 +1,35 @@
-import React from 'react';
-import Book from '../../components/Book';
-import AddBook from '../../components/AddBook';
+// Actions
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
-function Books() {
-  const books = [
-    {
-      id: 1,
-      title: 'The Hunger Games',
-      author: 'Suzanne Collins',
-    },
-    {
-      id: 2,
-      title: 'Dune',
-      author: 'Frank Herbert',
-    },
-  ];
+//Initial state
+const initialState = [];
 
-  return (
-    <div>
-      <ul>
-        {
-          books.map((book) => (
-            <Book
-              key={book.id}
-              title={book.title}
-              author={book.author}
-            />
-          ))
-        }
-      </ul>
-      <AddBook />
-    </div>
-  );
+//Action creators
+export function addBook(payload) {
+  return { 
+    type: ADD_BOOK,
+    payload }
 }
 
-export default Books;
+export function removeBook(payload) {
+  return { 
+    type: REMOVE_BOOK,
+    payload }
+}
+
+//Reducer
+function booksReducer(state = initialState, action) {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [...state,
+        action.payload
+      ];
+    case REMOVE_BOOK:
+      return state.filter[(book) => book.id !== action.payload];
+    default:
+      return state;
+  }
+};
+
+export default booksReducer;
