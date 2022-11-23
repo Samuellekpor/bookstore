@@ -3,7 +3,18 @@ const ADDED_BOOK = 'bookstore/books/ADDED_BOOK';
 const REMOVED_BOOK = 'bookstore/books/REMOVED_BOOK';
 
 // Initial state
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+  },
+  {
+    id: 2,
+    title: 'Dune',
+    author: 'Frank Herbert',
+  },
+];
 
 // Action creators
 export function addBook(payload) {
