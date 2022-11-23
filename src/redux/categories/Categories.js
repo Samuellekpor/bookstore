@@ -23,4 +23,4 @@ function categoriesReducer(state = initialState, action) {
   }
 };
 
-export default booksReducer;
+export default categoriesReducer;
