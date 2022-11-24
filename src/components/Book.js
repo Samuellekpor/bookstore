@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books.js';
+import { removeBook } from '../redux/books/books';
 
 function Book(props) {
   const book = props;
