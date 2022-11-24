@@ -5,7 +5,7 @@ import { checkBook } from '../redux/categories/categories';
 function Categories() {
   const dispatch = useDispatch();
 
-  function checkBookCategory(){
+  function checkBookCategory() {
     dispatch(checkBook());
   }
   return (
