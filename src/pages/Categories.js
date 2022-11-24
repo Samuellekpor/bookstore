@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { checkBook } from '../redux/categories/categories';
+import { checkBook } from '../redux/categories/categories.js';
 
 function Categories() {
   const dispatch = useDispatch();
