@@ -11,11 +11,13 @@ function Books() {
       <ul>
         {
           books.map((book) => (
-            <Book
-              key={book.id}
-              title={book.title}
-              author={book.author}
-            />
+            <li key={book.id}>
+              <Book
+                id={book.id}
+                title={book.title}
+                author={book.author}
+              />
+            </li>
           ))
         }
       </ul>
