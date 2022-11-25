@@ -58,10 +58,10 @@ function booksReducer(state = initialState, action) {
   }
 }
 
-export function fetchAllBooks(){
+export function getAllBooks(){
  return async function(dispatch){
   const books = await fetchBooks();
-  dispatch(bookFetch(books));
+  dispatch(getBooks(books));
 };
 }
 
@@ -76,7 +76,7 @@ export function deleteABook(){
   return async function(dispatch){
   await deleteBook(payload);
   dispatch(removeBook(payload));
-  dispatch(fetchAllBooks());
+  dispatch(getAllBooks());
 };
 }
 
