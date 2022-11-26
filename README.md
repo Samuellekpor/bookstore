@@ -29,7 +29,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
 **[Bookstore]** is an application which helphs with books storage. You can display a list of books, add a book or remove a selected book.
 
