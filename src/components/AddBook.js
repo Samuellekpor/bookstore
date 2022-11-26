@@ -13,9 +13,10 @@ function AddBook() {
   function addNewBook(event) {
     event.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       author,
+      category: 'Action',
     };
 
     dispatch(saveBook(newBook));

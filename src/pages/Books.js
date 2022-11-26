@@ -7,7 +7,7 @@ import { getAllBooks } from '../redux/books/Books';
 function Books() {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     dispatch(getAllBooks());
   }, []);
@@ -17,9 +17,9 @@ function Books() {
       <ul>
         {
           books.map((book) => (
-            <li key={book.id}>
+            <li key={book.item_id}>
               <Book
-                id={book.id}
+                id={book.item_id}
                 title={book.title}
                 author={book.author}
               />

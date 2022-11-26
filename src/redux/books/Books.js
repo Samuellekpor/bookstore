@@ -9,12 +9,12 @@ const GET_BOOKS = 'bookstore/books/GET_BOOKS';
 // Initial state
 const initialState = [
   {
-    id: uuidv4(),
+    item_id: uuidv4(),
     title: 'The Hunger Games',
     author: 'Suzanne Collins',
   },
   {
-    id: uuidv4(),
+    item_id: uuidv4(),
     title: 'Dune',
     author: 'Frank Herbert',
   },
@@ -50,7 +50,7 @@ function booksReducer(state = initialState, action) {
         action.payload,
       ];
     case REMOVED_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
     case GET_BOOKS:
       return action.payload;
     default:
@@ -58,21 +58,22 @@ function booksReducer(state = initialState, action) {
   }
 }
 
-export function getAllBooks(){
- return async function(dispatch){
-  const books = await fetchBooks();
-  dispatch(getBooks(books));
-};
+export function getAllBooks() {
+  return async function (dispatch) {
+    const books = await fetchBooks();
+    dispatch(getBooks(books));
+  };
 }
 
-export function saveBooks(){
+export function saveBook(payload){
   return async function(dispatch){
   await addnewBook(payload);
   dispatch(addBook(payload));
+  dispatch(getAllBooks());
 };
 }
 
-export function deleteABook(){
+export function deleteABook(payload){
   return async function(dispatch){
   await deleteBook(payload);
   dispatch(removeBook(payload));
