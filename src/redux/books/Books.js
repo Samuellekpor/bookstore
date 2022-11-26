@@ -65,20 +65,20 @@ export function getAllBooks() {
   };
 }
 
-export function saveBook(payload){
-  return async function(dispatch){
-  await addnewBook(payload);
-  dispatch(addBook(payload));
-  dispatch(getAllBooks());
-};
+export function saveBook(payload) {
+  return async function (dispatch) {
+    await addnewBook(payload);
+    dispatch(addBook(payload));
+    dispatch(getAllBooks());
+  };
 }
 
-export function deleteABook(payload){
-  return async function(dispatch){
-  await deleteBook(payload);
-  dispatch(removeBook(payload));
-  dispatch(getAllBooks());
-};
+export function deleteABook(payload) {
+  return async function (dispatch) {
+    await deleteBook(payload);
+    dispatch(removeBook(payload));
+    dispatch(getAllBooks());
+  };
 }
 
 export default booksReducer;
