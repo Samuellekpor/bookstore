@@ -4,7 +4,7 @@ import { AiOutlineUser } from 'react-icons/ai';
 
 function NavBar() {
   return (
-    <div className="NavBar-container">
+    <div className="navBar-container">
       <nav className="nav-bar">
         <h1 className="logo">Bookstore CMS</h1>
         <ul className="navLinks">
