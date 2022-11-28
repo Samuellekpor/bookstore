@@ -4,15 +4,15 @@ import { AiOutlineUser } from 'react-icons/ai';
 
 function NavBar() {
   return (
-    <div className="NavBar-container">
+    <div className="navBar-container">
       <nav className="nav-bar">
         <h1 className="logo">Bookstore CMS</h1>
         <ul className="navLinks">
           <li className="link">
-            <NavLink to="/">Books</NavLink>
+            <NavLink to="/">BOOKS</NavLink>
           </li>
           <li className="link">
-            <NavLink to="/categories">Categories</NavLink>
+            <NavLink to="/categories">CATEGORIES</NavLink>
           </li>
         </ul>
         <button type="button" className="profilButton">

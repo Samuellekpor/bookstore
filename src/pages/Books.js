@@ -14,7 +14,7 @@ function Books() {
 
   return (
     <div>
-      <ul>
+      <ul className="books-container">
         {
           books.map((book) => (
             <li key={book.item_id}>

@@ -26,12 +26,13 @@ function AddBook() {
     });
   }
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
+    <div className="addContainer">
+      <span className="separator" />
+      <h2 className="addTitle">ADD NEW BOOK</h2>
       <form>
         <input id="title" placeholder="Book title" value={title} onChange={(e) => setInput({ ...input, title: e.target.value })} />
         <input id="author" placeholder="Author" value={author} onChange={(e) => setInput({ ...input, author: e.target.value })} />
-        <button onClick={addNewBook} type="submit">Add book</button>
+        <button onClick={addNewBook} type="submit" className="submitButton">Add book</button>
       </form>
     </div>
   );
